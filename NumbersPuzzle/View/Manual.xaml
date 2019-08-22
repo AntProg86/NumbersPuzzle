@@ -1,0 +1,38 @@
+﻿<Window x:Class="NumbersPuzzle.View.Manual"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:NumbersPuzzle.View"
+        mc:Ignorable="d"
+        Title="Правила игры" Height="450" Width="500">
+    <FlowDocumentScrollViewer>
+        <FlowDocument>
+            <Paragraph>
+                <Bold>Правила игры.</Bold>
+            </Paragraph>
+            <Paragraph>
+                Компьютер загадывает случайное четырехзначное число, которое подчиняется двум правилам:
+            </Paragraph>
+            <Paragraph>
+                <Bold>1.Все цифры разные; 2.Первая цифра - не ноль.</Bold>
+            </Paragraph>
+            <Paragraph>
+                Вы должны отгадать это число, набирая свои варианты ответа (дается 7 попыток).
+                Если введенное Вами число не противоречит вышеперечисленным правилам, выводится результат попытки в виде:
+            </Paragraph>
+            <Paragraph>
+                <Bold>Точно</Bold> - количество цифр (соответствует количеству "Звёздочек"), которые есть и в загаданном числе и в Вашем варианте ответа, причем стоят они точно на своих позициях.
+            </Paragraph>
+            <Paragraph>
+                <Bold>Рядом</Bold> - количество цифр (соответствует количеству "Чёрточек"), которые есть и в загаданном числе и в Вашем варианте ответа, но стоят они на разных позициях.
+            </Paragraph>
+            <Paragraph>
+                <Bold>Пример:</Bold> Компьютер загадал число 5649, Вы ввели 5940. Результат этого хода: 2 точно, 1 рядом : точно угадана цифры 4 и 5, рядом угадана цифра 9.
+            </Paragraph>
+            <Paragraph Foreground="Red">
+                <Bold>Внимание!</Bold> Если после очередного хода остался единственный возможный (а значит, и правильный) вариант ответа - текущая попытка становится решающей и последней - Вы либо выигрываете либо проигрываете!
+            </Paragraph>
+        </FlowDocument>
+    </FlowDocumentScrollViewer>
+</Window>
