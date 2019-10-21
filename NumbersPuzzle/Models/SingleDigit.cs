@@ -88,6 +88,7 @@ namespace NumbersPuzzle.Models
         /// <summary>Увеличивает значение на 1.</summary>
         public void PlusOne()
         {
+            //TODO : Оставить проверку только в свойстве 
             if (Value == 9)
                 return;
 
@@ -97,6 +98,7 @@ namespace NumbersPuzzle.Models
         /// <summary>Уменьшает значение на 1.</summary>
         public void MinusOne()
         {
+            //TODO : Оставить проверку только в свойстве 
             if (Value == 0)
                 return;
 
