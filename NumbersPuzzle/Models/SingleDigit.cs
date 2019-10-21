@@ -118,7 +118,7 @@ namespace NumbersPuzzle.Models
         /// <summary>Сгенерировать случайное число от 0 до 9.</summary>
         public void GenerateRandomValue()
         {
-            Value = rnd.Next(0, 9);
+            Value = rnd.Next(0, 10);
         }
 
         #endregion
